@@ -7,15 +7,17 @@ background-repeat: no-repeat;
 h1 {
   color: black;
   text-align: center;
+  font-family: "Papyrus";
 }
 
 h3 {
   color: black;
   text-align: center;
+  font-family: "Papyrus";
 }
 
 p {
-  font-family: "Englebert", "Englebert";
+  font-family: "Papyrus";
   font-size: 20px;
   width: 800px;
   margin: 0 auto;
