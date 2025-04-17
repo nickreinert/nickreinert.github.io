@@ -1,6 +1,7 @@
 body {
-  background-image: 
-url('file:///Users/nickolasreinert/Documents/GitHub/nickreinert.github.io/free-nature-images.jpg');
+  background-image: url('file:///Users/nickolasreinert/Documents/GitHub/nickreinert.github.io/free-nature-images.jpg');
+background-size: cover;
+background-repeat: no-repeat;
 }
 
 h1 {
