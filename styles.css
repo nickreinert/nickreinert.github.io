@@ -1,34 +1,47 @@
 body {
-  background-image: url("free-nature-images.jpg");
-background-size: cover;
-background-repeat: no-repeat;
+  background-color: #000000;
 }
 
+hr {
+    border: 1px solid #003a76; width: 100%; margin: 10px auto;
+}
 h1 {
-  color: black;
+  font-family: Helvetica;
+  color: white;
   text-align: center;
-  font-family: "Papyrus";
-}
-
-h3 {
-  color: black;
-  text-align: center;
-  font-family: "Papyrus";
+  font-size: 40px;
 }
 
 p {
-  font-family: "Papyrus";
-  font-size: 20px;
-  width: 800px;
-  margin: 0 auto;
-  text-align: center;
+  font-family: Helvetica;
 }
+
 img {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  width: 40%;
 }
-header
-h1 {
-  font-family: "Papyrus";
+
+.topnav {
+  background-color: #000000;
+  overflow: hidden;
+  float: center;
+  color: white;
+  font-family: Helvetica;
+  text-align: center;
+  padding: 14px 16px;
+  font-size: 20px;
+}
+
+.topnav a:hover {
+  background-color: #003a76;
+  color: white;
+  text-decoration: underline;
+}
+
+.topnav a.active {
+  background-color: #000000;
+  color: white;
+  text-decoration: none;
 }
