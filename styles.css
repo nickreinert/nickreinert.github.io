@@ -1,5 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+	margin: 0;
+}
+
 body {
-  background-color: #000000;
+  background-image: url("AbstractPainting(red)GerhardRichter.webp");
+  margin: 0;
 }
 
 .encode-sans-expanded-thin {
@@ -9,13 +20,20 @@ body {
 }
 
 hr {
-    border: 1px solid #b50000; width: 100%; margin: 10px auto;
+    margin: 0;
+    margin-bottom: 10px;
+  	border: 0;
+	border-top: 1px solid #b50000; width: 100%; margin: 0;
 }
 h1 {
-  font-family: "Encode Sans Expanded";
+  margin: 0; /* Ensure no margin on the header */
+  font-family: "Encode Sans Expanded", sans-serif;
+  padding-top: 25px;
+  padding-bottom: 25px;
   color: white;
   text-align: left;
   font-size: 40px;
+  background-color: #000000;
 }
 
 h2 {
@@ -27,7 +45,7 @@ h2 {
 
 
 p {
-  font-family: Helvetica;
+  font-family: "Encode Sans", sans-serif;
   color: white;
 }
 
@@ -39,11 +57,12 @@ img {
 }
 
 .topnav a {
+  margin-top: 10px;
   background-color: #000000;
   overflow: hidden;
   float: center;
   color: white !important;
-  font-family: Helvetica;
+  font-family: "Encode Sans", sans-serif;
   text-align: center;
   padding: 10px 16px;
   font-size: 20px;
