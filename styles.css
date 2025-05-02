@@ -3,7 +3,7 @@ body {
 }
 
 hr {
-    border: 1px solid #003a76; width: 100%; margin: 10px auto;
+    border: 1px solid #b50000; width: 100%; margin: 10px auto;
 }
 h1 {
   font-family: Helvetica;
@@ -36,7 +36,7 @@ img {
   background-color: #000000;
   overflow: hidden;
   float: center;
-  color: white;
+  color: white !important;
   font-family: Helvetica;
   text-align: center;
   padding: 14px 16px;
@@ -44,13 +44,20 @@ img {
 }
 
 .topnav a:hover {
-  background-color: #003a76;
-  color: white;
+  background-color: #b50000;
+  color: white !important;
   text-decoration: underline;
 }
 
-.topnav a.active {
+.topnav a:active {
   background-color: #000000;
-  color: white;
+  color: white !important;
+  text-decoration: none;
+}
+
+
+.topnav a:visited {
+  background-color: #000000;
+  color: white !important;
   text-decoration: none;
 }
