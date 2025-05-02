@@ -1,31 +1,66 @@
+/*auto*/
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
+	text-shadow:	 			
+      -1px -1px 0 black,
+       1px -1px 0 black,
+      -1px  1px 0 black,
+       1px  1px 0 black; /*outling text by default*/
+	
+	   text-decoration: none;
 }
+
+.full-height {
+    height: calc(var(--vh, 1vh) * 100);
+}
+
+/* callable for left half of screen black*/
+.left-black {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 40vw;        /* 40% of the screen width */
+  height: 100vh;      /* Full screen height */
+  background-color: black;
+  z-index: -1;        /* Puts it behind other content (optional) */
+}
+
 
 html {
 	margin: 0;
 }
 
+/* background image*/
 body {
   background-image: url("AbstractPainting(red)GerhardRichter.webp");
-  margin: 0;
+  overflow-x: hidden; /* Prevent horizontal scroll */
+  overflow-y: auto;   /* Enable vertical scroll */
+  margin: 0px;
 }
 
+.body2 {
+  background-image: url("grayandredGerhardRichter.webp");
+  margin: 0px;
+}
+/*callable font*/
 .encode-sans-expanded-thin {
   font-family: "Encode Sans Expanded", sans-serif;
   font-weight: 100;
   font-style: normal;
 }
-
+/*horizontal line*/
 hr {
     margin: 0;
     margin-bottom: 10px;
   	border: 0;
 	border-top: 1px solid #b50000; width: 100%; margin: 0;
 }
-h1 {
+
+/*header*/
+header {
   margin: 0; /* Ensure no margin on the header */
   font-family: "Encode Sans Expanded", sans-serif;
   padding-top: 25px;
@@ -34,19 +69,36 @@ h1 {
   text-align: left;
   font-size: 40px;
   background-color: #000000;
+  margin-bottom: 10px;
+}
+
+h1 {
+  margin: 0; /* Ensure no margin on the header */
+  font-family: "Encode Sans Expanded", sans-serif;
+  padding-top: 25px;
+  padding-bottom: 20px;
+  color: white;
+  text-align: left;
+  font-size: 40px;
+  background-color: #000000;
+  margin-bottom: 0px;
+  z-index: 2; /*makes it the forefront on z axis*/
 }
 
 h2 {
   font-family: "Encode Sans Expanded", sans-serif;
   color: white;
-  text-align: center;
+  text-align: left;
   font-size: 20px;
+   width: 40%;
 }
 
 
 p {
+	margin-left: 10px;
   font-family: "Encode Sans", sans-serif;
   color: white;
+  width: 40%;
 }
 
 img {
@@ -56,30 +108,46 @@ img {
   width: 40%;
 }
 
-.topnav a {
-  margin-top: 10px;
+.topnav {
   background-color: #000000;
-  overflow: hidden;
-  float: center;
   color: white !important;
   font-family: "Encode Sans", sans-serif;
   text-align: center;
-  padding: 10px 16px;
+
   font-size: 20px;
+
+  border-bottom: 1px solid #b50000; margin: 0;
+  border-left: 1px solid #b50000; margin: 0;
+  border-right: 1px solid #b50000; margin: 0;
+  z-index: 1;
+  width: 40%;
+  display: flex;
+  gap: 10px;
+}
+
+/* Links inside navbar */
+.topnav a {
   text-decoration: none;
+  padding: 6px 10px; /* Consistent padding for links */
+  margin: 0;  /* Remove any margin on the links */
+  display: inline-block;  /* Ensure the anchor behaves like a block element without gaps */
+  height: 100%; /* Make sure the link height fills the parent container */
+  text-align: center;
 }
 
 .topnav a:hover {
   background-color: #b50000;
   color: white !important;
   text-decoration: none !important;
+  z-index: 1;
 }
 
 .topnav a:active {
   color: white !important;
+  z-index: 1;
 }
-
 
 .topnav a:visited {
   color: white !important;
+  z-index: 1;
 }
