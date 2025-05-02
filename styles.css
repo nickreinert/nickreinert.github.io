@@ -2,18 +2,24 @@ body {
   background-color: #000000;
 }
 
+.encode-sans-expanded-thin {
+  font-family: "Encode Sans Expanded", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
 hr {
     border: 1px solid #b50000; width: 100%; margin: 10px auto;
 }
 h1 {
-  font-family: Helvetica;
+  font-family: "Encode Sans Expanded";
   color: white;
-  text-align: center;
+  text-align: left;
   font-size: 40px;
 }
 
 h2 {
-  font-family: Helvetica;
+  font-family: "Encode Sans Expanded", sans-serif;
   color: white;
   text-align: center;
   font-size: 20px;
