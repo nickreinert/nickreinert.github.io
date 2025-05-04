@@ -78,11 +78,18 @@ h1 {
   padding-top: 25px;
   padding-bottom: 20px;
   color: white;
-  text-align: left;
   font-size: 40px;
   background-color: #000000;
   margin-bottom: 0px;
   z-index: 2; /*makes it the forefront on z axis*/
+  
+}
+
+
+/*header spacing*/
+.header {
+	display: flex;
+	justify-content: space-between;
 }
 
 h2 {
@@ -95,10 +102,20 @@ h2 {
 
 
 p {
-	margin-left: 10px;
+	margin: 10px;
+	margin-right: 10px;
   font-family: "Encode Sans", sans-serif;
   color: white;
-  width: 40%;
+  width: 39%;
+}
+
+.p2 {
+	margin: 10px;
+	margin-right: 10px;
+  font-family: "Encode Sans", sans-serif;
+  color: white;
+  width: 5;
+  text-align: right;
 }
 
 img {
@@ -120,7 +137,7 @@ img {
   border-left: 1px solid #b50000; margin: 0;
   border-right: 1px solid #b50000; margin: 0;
   z-index: 1;
-  width: 40%;
+  width: 100vw;
   display: flex;
   gap: 10px;
 }
