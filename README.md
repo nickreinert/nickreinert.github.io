@@ -5,9 +5,9 @@
 - Immanuel Wilkin's Webstite
 
 ## What Works
-- Topnav
+- Navigation
 - Soundcloud player
-- Some Formatting
+- Formatting
 
 ## What Doesn't
 - Certain Pages are blank... lol
